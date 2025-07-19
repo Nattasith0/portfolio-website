@@ -42,7 +42,7 @@ body {
 .nav-logo a {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #2c3e50;
+    color: #0d00ff;
     text-decoration: none;
 }
 
@@ -61,6 +61,12 @@ body {
 
 .nav-link:hover {
     color: #3498db;
+}
+
+.nav-menu .nav-link.active-link {
+    color: #00bcd4;
+    font-weight: bold;
+    border-bottom: 2px solid #00bcd4;
 }
 
 .nav-toggle {
@@ -83,7 +89,7 @@ body {
     display: flex;
     align-items: center;
     padding: 100px 20px 50px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1f2b38 0%, #a3d5ff 100%);
     color: white;
 }
 
@@ -98,7 +104,7 @@ body {
 }
 
 .highlight {
-    color: #f39c12;
+    color: #52e6e6;
 }
 
 .hero-subtitle {
@@ -130,12 +136,12 @@ body {
 }
 
 .btn-primary {
-    background: #3498db;
+    background: #36bad7;
     color: white;
 }
 
 .btn-primary:hover {
-    background: #2980b9;
+    background: #00689c;
     transform: translateY(-2px);
 }
 
@@ -492,4 +498,36 @@ body {
     .project-links {
         flex-direction: column;
     }
+}
+
+.language-switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+    display: flex;
+    gap: 10px;
+}
+
+.language-switcher button {
+    background-color: #ffffff;
+    border: 2px solid #007bff;
+    color: #007bff;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.language-switcher button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.language-switcher button.active {
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.4);
 }
