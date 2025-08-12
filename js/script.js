@@ -97,7 +97,6 @@ document.addEventListener("DOMContentLoaded", () => {
         projects: document.querySelector('a[href="#projects"]'),
         contact: document.querySelector('a[href="#contact"]')
     };
-
     const switchLanguage = (lang) => {
         const t = translations[lang];
         elements.home.textContent = t.nav.home;
@@ -106,28 +105,23 @@ document.addEventListener("DOMContentLoaded", () => {
         elements.projects.textContent = t.nav.projects;
         elements.contact.textContent = t.nav.contact;
     };
-
     document.getElementById("lang-en").addEventListener("click", () => {
         switchLanguage("en");
         document.getElementById("lang-en").classList.add("active");
         document.getElementById("lang-th").classList.remove("active");
     });
-
     document.getElementById("lang-th").addEventListener("click", () => {
         switchLanguage("th");
         document.getElementById("lang-th").classList.add("active");
         document.getElementById("lang-en").classList.remove("active");
     });
-
     switchLanguage("en");
 });
 
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-menu .nav-link");
-
 window.addEventListener("scroll", () => {
     let currentSectionId = "";
-
     sections.forEach((section) => {
         const sectionTop = section.offsetTop - 100;
         const sectionHeight = section.offsetHeight;
@@ -135,7 +129,7 @@ window.addEventListener("scroll", () => {
             currentSectionId = section.getAttribute("id");
         }
     });
-
+    
     navLinks.forEach((link) => {
         link.classList.remove("active-link");
         if (link.getAttribute("href").includes(currentSectionId)) {

@@ -29,7 +29,7 @@
                 <button id="lang-en" class="active">EN</button>
                 <button id="lang-th">ไทย</button>
             </div>
-            <div class="nav-toggle">    
+            <div class="nav-toggle">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -38,88 +38,92 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="hero">
         <div class="hero-content">
-            <h1>Hello, I'm <span class="highlight">Nattasith</span></h1>
-            <p class="hero-subtitle">Full Stack Developer</p>
-            <p class="hero-description">I create beautiful and functional web applications</p>
+            <div class="hero-image">
+                <img src="images/profile.jpg" alt="Profile Picture">
+            </div>
+            <h1>Hi, I'm <span>Nattasit Manochai</span></h1>
+            <p class="typewriter">Front-End Developer | UI/UX Enthusiast | Learner</p>
             <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                <a href="#projects" class="btn btn-primary"><i class="fas fa-laptop-code"></i> View My Work</a>
+                <a href="assets/Nattasith_Resume.pdf" class="btn btn-secondary" download>
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
             </div>
         </div>
-        <div class="hero-image">
-            <img src="images/profile.jpg" alt="Profile Picture">
-        </div>
+
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I am currently training to learn website and application development, which I am passionate about, using modern technologies. I love learning new technologies.</p>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <h3>1+</h3>
-                            <p>Years Experience</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>5+</h3>
-                            <p>Projects Completed</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>10+</h3>
-                            <p>Happy Clients</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <img src="images/about.jpg" alt="About Image">
-                </div>
-            </div>
-        </div>
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            I am passionate about building modern and responsive websites. 
+            I love combining creativity with functionality to create experiences that users enjoy.
+        </p>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">My Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
+    <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-marquee">
+            <div class="skills-track">
+                <div class="skill-card">
                     <i class="fab fa-html5"></i>
-                    <h3>HTML5</h3>
-                    <p>Semantic markup and modern HTML5 features</p>
+                    <p>HTML5</p>
                 </div>
-                <div class="skill-item">
+                <div class="skill-card">
                     <i class="fab fa-css3-alt"></i>
-                    <h3>CSS3</h3>
-                    <p>Responsive design and modern CSS techniques</p>
+                    <p>CSS3</p>
                 </div>
-                <div class="skill-item">
+                <div class="skill-card">
                     <i class="fab fa-js-square"></i>
-                    <h3>JavaScript</h3>
-                    <p>ES6+ features and modern JavaScript</p>
+                    <p>JavaScript</p>
                 </div>
-                <div class="skill-item">
+                <div class="skill-card">
                     <i class="fab fa-react"></i>
-                    <h3>React</h3>
-                    <p>Component-based UI development</p>
+                    <p>React</p>
                 </div>
-                <div class="skill-item">
+                <div class="skill-card">
                     <i class="fab fa-node-js"></i>
-                    <h3>Node.js</h3>
-                    <p>Server-side JavaScript development</p>
+                    <p>Node.js</p>
                 </div>
-                <div class="skill-item">
+                <div class="skill-card">
                     <i class="fas fa-database"></i>
-                    <h3>MongoDB</h3>
-                    <p>NoSQL database management</p>
+                    <p>MongoDB</p>
+                </div>
+                <!-- ทำซ้ำอีกชุดเพื่อให้เลื่อนต่อเนื่อง -->
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js-square"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react"></i>
+                    <p>React</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-node-js"></i>
+                    <p>Node.js</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <p>MongoDB</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
@@ -134,7 +138,8 @@
                         <div class="project-links">
                             <a href="https://htmlpreview.github.io/?https://github.com/Nattasith0/mini-ecommerce-collaboration/blob/main/index.html"
                                 class="btn btn-small1">Live Demo</a>
-                            <a href="https://github.com/Nattasith0/mini-ecommerce-collaboration" class="btn btn-small btn-secondary">GitHub</a>
+                            <a href="https://github.com/Nattasith0/mini-ecommerce-collaboration"
+                                class="btn btn-small btn-secondary">GitHub</a>
                         </div>
                     </div>
                 </div>
